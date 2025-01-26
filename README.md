@@ -16,25 +16,26 @@ I used JDK 21, the most current long term edition.
 - [Official Java Development Kit](https://docs.oracle.com/en/java/javase/index.html)
 
 # Libraries Used
-Java AWT (Abstract Window Toolkit)
-java.awt.*: Provides classes for creating user interfaces and for painting graphics and images. This includes components like Frame, Panel, and Canvas.
-java.awt.event.*: Contains interfaces and classes for handling different types of events fired by AWT components, such as mouse and keyboard events.
-java.awt.geom.*: Offers classes for defining and performing operations on objects related to two-dimensional geometry, such as Ellipse2D and Rectangle2D.
-java.awt.image.*: Provides classes for creating and modifying images, including BufferedImage for handling image data.
-java.awt.Color: Represents colors using the RGB color model, allowing for the specification and manipulation of colors.
-java.awt.Graphics2D: Extends the Graphics class to provide more sophisticated control over geometry, coordinate transformations, color management, and text layout.
-java.awt.RenderingHints: Allows the specification of preferences for the rendering algorithms used by Graphics2D.
-java.awt.AlphaComposite: Provides a way to compose a drawing operation with an alpha value, enabling transparency effects.
-Java Swing
-javax.swing.*: Contains a set of 'lightweight' components that work consistently across all platforms. This includes components like JFrame, JPanel, JMenuBar, and JColorChooser.
-javax.swing.event.*: Provides interfaces and classes for handling events fired by Swing components, such as action events from buttons and menu items.
-Java IO
-java.io.*: Offers classes for system input and output through data streams, serialization, and the file system. This includes classes like File and IOException.
-Java Util
-java.util.*: Contains the collections framework, legacy collection classes, event model, date and time facilities, internationalization, and miscellaneous utility classes. This includes ArrayList for managing collections of shapes and colors.
-java.util.Stack: Represents a last-in-first-out (LIFO) stack of objects, used for implementing undo and redo functionality.
-Java ImageIO
-javax.imageio.ImageIO: A class for reading and writing images in various formats. This is used for saving and loading images to and from files.
+
+## Java AWT (Abstract Window Toolkit)
+- java.awt.*: Provides classes for creating user interfaces and for painting graphics and images. This includes components like Frame, Panel, and Canvas.
+- java.awt.event.*: Contains interfaces and classes for handling different types of events fired by AWT components, such as mouse and keyboard events.
+- java.awt.geom.*: Offers classes for defining and performing operations on objects related to two-dimensional geometry, such as Ellipse2D and Rectangle2D.
+- java.awt.image.*: Provides classes for creating and modifying images, including BufferedImage for handling image data.
+- java.awt.Color: Represents colors using the RGB color model, allowing for the specification and manipulation of colors.
+- java.awt.Graphics2D: Extends the Graphics class to provide more sophisticated control over geometry, coordinate transformations, color management, and text layout.
+- java.awt.RenderingHints: Allows the specification of preferences for the rendering algorithms used by Graphics2D.
+- java.awt.AlphaComposite: Provides a way to compose a drawing operation with an alpha value, enabling transparency effects.
+## Java Swing
+- javax.swing.*: Contains a set of 'lightweight' components that work consistently across all platforms. This includes components like JFrame, JPanel, JMenuBar, and JColorChooser.
+- javax.swing.event.*: Provides interfaces and classes for handling events fired by Swing components, such as action events from buttons and menu items.
+## Java IO
+- java.io.*: Offers classes for system input and output through data streams, serialization, and the file system. This includes classes like File and IOException.
+## Java Util
+- java.util.*: Contains the collections framework, legacy collection classes, event model, date and time facilities, internationalization, and miscellaneous utility classes. This includes ArrayList for managing collections of shapes and colors.
+- java.util.Stack: Represents a last-in-first-out (LIFO) stack of objects, used for implementing undo and redo functionality.
+## Java ImageIO
+- javax.imageio.ImageIO: A class for reading and writing images in various formats. This is used for saving and loading images to and from files.
 
 # Useful Websites
 
