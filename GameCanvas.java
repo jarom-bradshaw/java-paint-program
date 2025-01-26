@@ -12,6 +12,7 @@ public class GameCanvas extends Canvas {
     }
 
     private void startGame() {
+        // Start the game timer
         timer = new Timer(1000, e -> {
             timeLeft--;
             if (timeLeft <= 0) {
@@ -38,6 +39,7 @@ public class GameCanvas extends Canvas {
     // }
 
     public void resetGame() {
+        // Reset the game state
         score = 0;
         timeLeft = 60;
         clear();

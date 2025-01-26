@@ -29,6 +29,7 @@ public class Canvas extends JComponent {
             }
 
             public void mouseReleased(MouseEvent e) {
+                // Save the current state for undo
                 undoStack.push(copyImage(image));
                 if (undoStack.size() > MAX_UNDO_STATES) {
                     undoStack.remove(0);
@@ -40,6 +41,7 @@ public class Canvas extends JComponent {
             public void mouseDragged(MouseEvent e) {
                 x2 = e.getX();
                 y2 = e.getY();
+                // Draw the current brush shape
                 currentBrush.draw(g2d, x2, y2, brushSize);
                 repaint(x2 - brushSize / 2, y2 - brushSize / 2, brushSize, brushSize);
                 x1 = x2;
@@ -67,6 +69,7 @@ public class Canvas extends JComponent {
     }
 
     public void clear() {
+        // Clear the canvas
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.CLEAR));
         g2d.fillRect(0, 0, getWidth(), getHeight());
         g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER));
@@ -75,6 +78,7 @@ public class Canvas extends JComponent {
 
     public void undo() {
         if (!undoStack.isEmpty()) {
+            // Save the current state for redo
             redoStack.push(copyImage(image));
             image = undoStack.pop();
             g2d = image.createGraphics();
@@ -84,6 +88,7 @@ public class Canvas extends JComponent {
 
     public void redo() {
         if (!redoStack.isEmpty()) {
+            // Save the current state for undo
             undoStack.push(copyImage(image));
             image = redoStack.pop();
             g2d = image.createGraphics();
