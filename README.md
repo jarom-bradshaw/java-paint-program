@@ -4,15 +4,12 @@ I created a limited game app that uses a drawing board. I learned a lot about ho
 
 I have limited experience working with GUI's so I thought a painting app would be a interesting way to interact with a new type of objects I hadn't previously worked with and I wanted to learn java as well.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/vNR_Unt-fhI)
 
 # Development Environment
 
-I used JDK 21, the most current long term edition.
+## JDK21
 
-{Describe the programming language that you used and any libraries.}
 - [Official Java Development Kit](https://docs.oracle.com/en/java/javase/index.html)
 
 # Libraries Used
